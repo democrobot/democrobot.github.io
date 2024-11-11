@@ -1,30 +1,71 @@
 site_name: Democrobot AI
 site_url: https://www.democrobot.org
 theme:
+  palette:
+    primary: blue grey
+    accent: light green
   name: material
   icon:
     repo: fontawesome/brands/github
-  palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      toggle:
-        icon: material/lightbulb-outline
-        name: Switch to Dark Mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      toggle:
-        icon: material/lightbulb
-        name: Switch to Light Mode
   features:
     - content.code.copy
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.footer
+    - navigation.sections
+    - navigation.top
+    - toc.follow
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - search.share
+
 extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/democrobot
+      name: Democrobot on GitHub
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/democrobot
+      name: Democrobot on LinkedIn
+    - icon: fontawesome/brands/x-twitter
+      link: https://www.x.com/democrobotnet
+      name: Democrobot on X (Twitter)
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/democrobot
+      name: Democrobot on Instagram
+    - icon: fontawesome/brands/threads
+      link: https://www.threads.net/@democrobot
+      name: Democrobot on Threads
+    - icon: fontawesome/brands/bluesky
+      link: https://bsky.app/profile/democrobot.bsky.social
+      name: Democrobot on Bluesky
+  consent:
+    title: Cookie consent
+    description: >- 
+
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+
 markdown_extensions:
   - admonition
   - attr_list
   - md_in_html
+  - pymdownx.blocks.caption
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+plugins:
+  - search
+  - blog:
+      post_url_format: "{slug}"
+  - tags
 nav:
-    - Introduction: 'index.md'
+    - Home: 'index.md'
     - About: 'about.md'
+    - Projects: 'projects'
+    - Blog:
+      - blog/index.md
+

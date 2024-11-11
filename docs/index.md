@@ -1,17 +1,13 @@
-# Welcome to MkDocs
+---
+hide:
+  - navigation
+  - toc
+---
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+# Welcome to Democrobot AI
 
-## Commands
+Democrobot AI is a non-profit developer of a suite of open source, purpose-built software designed for
+supporting grassroot efforts to pass pro-democracy, anti-corruption legislation everywhere, for everyone.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+Details coming soon. In the meantime, check out our [GitHub account](https://github.com/democrobot)
+for more information.
