@@ -8,26 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://www.democrobot.ai/blog/">
+        <link rel="canonical" href="https://www.democrobot.ai/projects/democracrm/installation/postgresql_database/">
       
       
-        <link rel="prev" href="../projects/democracrm/license/">
+        <link rel="prev" href="../debian_linux/">
       
       
+        <link rel="next" href="../democracrm_app/">
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
     
     
       
-        <title>Blog - Democrobot AI</title>
+        <title>PostgreSQL Database - Democrobot AI</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.0253249f.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.0253249f.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,7 +48,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -70,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#blog" class="md-skip">
+        <a href="#installation-step-2-postgresql-database-server" class="md-skip">
           Skip to content
         </a>
       
@@ -86,7 +88,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Democrobot AI" class="md-header__button md-logo" aria-label="Democrobot AI" data-md-component="logo">
+    <a href="../../../.." title="Democrobot AI" class="md-header__button md-logo" aria-label="Democrobot AI" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -106,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Blog
+              PostgreSQL Database
             
           </span>
         </div>
@@ -176,7 +178,7 @@
   
   
     <li class="md-tabs__item">
-      <a href=".." class="md-tabs__link">
+      <a href="../../../.." class="md-tabs__link">
         
   
     
@@ -193,7 +195,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../about/" class="md-tabs__link">
+      <a href="../../../../about/" class="md-tabs__link">
         
   
     
@@ -208,11 +210,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../projects/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../" class="md-tabs__link">
           
   
   Projects
@@ -226,13 +230,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../../blog/" class="md-tabs__link">
           
   
   Blog
@@ -273,7 +275,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Democrobot AI" class="md-nav__button md-logo" aria-label="Democrobot AI" data-md-component="logo">
+    <a href="../../../.." title="Democrobot AI" class="md-nav__button md-logo" aria-label="Democrobot AI" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -291,7 +293,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -311,7 +313,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../about/" class="md-nav__link">
+      <a href="../../../../about/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -328,25 +330,30 @@
       
   
   
+    
   
   
+  
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -357,7 +364,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Projects
@@ -371,7 +378,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../projects/" class="md-nav__link">
+      <a href="../../../" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -389,25 +396,30 @@
                 
   
   
+    
   
   
+  
     
     
     
       
       
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
         
           
-          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -418,7 +430,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
             DemocraCRM
@@ -432,7 +444,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../projects/democracrm/" class="md-nav__link">
+      <a href="../../" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -450,8 +462,10 @@
                 
   
   
+    
   
   
+  
     
     
     
@@ -461,11 +475,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_2" checked>
         
           
           <label class="md-nav__link" for="__nav_3_2_2" id="__nav_3_2_2_label" tabindex="0">
@@ -479,7 +493,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_2_2">
             <span class="md-nav__icon md-icon"></span>
             Installation
@@ -493,7 +507,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../projects/democracrm/installation/installation_overview/" class="md-nav__link">
+      <a href="../installation_overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -514,7 +528,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../projects/democracrm/installation/debian_linux/" class="md-nav__link">
+      <a href="../debian_linux/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -532,10 +546,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../projects/democracrm/installation/postgresql_database/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    PostgreSQL Database
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -544,6 +578,104 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#postgresql-server-installation-and-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      PostgreSQL Server Installation and Configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PostgreSQL Server Installation and Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#install-the-postgresql-packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install the PostgreSQL Packages
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-the-database-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test the Database Installation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-the-database-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configure the Database Server
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-the-platform-runtime-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create the Platform Runtime User
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-the-platform-database" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create the Platform Database
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-the-platform-database-connectivity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configure the Platform Database Connectivity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verify-the-database-connection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verify the Database Connection
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -556,7 +688,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../projects/democracrm/installation/democracrm_app/" class="md-nav__link">
+      <a href="../democracrm_app/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -577,7 +709,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../projects/democracrm/installation/gunicorn/" class="md-nav__link">
+      <a href="../gunicorn/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -598,7 +730,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../projects/democracrm/installation/nginx_web_server/" class="md-nav__link">
+      <a href="../nginx_web_server/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -627,7 +759,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../projects/democracrm/configuration/" class="md-nav__link">
+      <a href="../../configuration/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -648,7 +780,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../projects/democracrm/upgrading/" class="md-nav__link">
+      <a href="../../upgrading/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -709,7 +841,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../projects/democracrm/getting-started/user_account.md" class="md-nav__link">
+      <a href="../../getting-started/user_account.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -730,7 +862,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../projects/democracrm/getting-started/organization_account.md" class="md-nav__link">
+      <a href="../../getting-started/organization_account.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -751,7 +883,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../projects/democracrm/getting-started/platform-campaigns.md" class="md-nav__link">
+      <a href="../../getting-started/platform-campaigns.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -772,7 +904,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../projects/democracrm/getting-started/people-places.md" class="md-nav__link">
+      <a href="../../getting-started/people-places.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -841,7 +973,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../projects/democracrm/features/" class="md-nav__link">
+      <a href="../../features/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -862,7 +994,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../projects/democracrm/features/accounts/" class="md-nav__link">
+      <a href="../../features/accounts/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -883,7 +1015,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../projects/democracrm/features/contacts/" class="md-nav__link">
+      <a href="../../features/contacts/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -904,7 +1036,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../projects/democracrm/features/places/" class="md-nav__link">
+      <a href="../../features/places/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -925,7 +1057,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../projects/democracrm/features/organizing/" class="md-nav__link">
+      <a href="../../features/organizing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -946,7 +1078,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../projects/democracrm/features/lobbying/" class="md-nav__link">
+      <a href="../../features/lobbying/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -967,7 +1099,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../projects/democracrm/features/social/" class="md-nav__link">
+      <a href="../../features/social/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -988,7 +1120,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../projects/democracrm/features/web/" class="md-nav__link">
+      <a href="../../features/web/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1097,7 +1229,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../projects/democracrm/models/accounts/user_account/" class="md-nav__link">
+      <a href="../../models/accounts/user_account/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1118,7 +1250,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../projects/democracrm/models/accounts/organization_account/" class="md-nav__link">
+      <a href="../../models/accounts/organization_account/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1187,7 +1319,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../projects/democracrm/models/core/geographic_boundaries.md" class="md-nav__link">
+      <a href="../../models/core/geographic_boundaries.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1256,7 +1388,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../projects/democracrm/models/organizing/campaign/" class="md-nav__link">
+      <a href="../../models/organizing/campaign/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1333,7 +1465,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../projects/democracrm/development/data/" class="md-nav__link">
+      <a href="../../development/data/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1354,7 +1486,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../projects/democracrm/development/url_scheme/" class="md-nav__link">
+      <a href="../../development/url_scheme/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1375,7 +1507,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../projects/democracrm/development/documentation/" class="md-nav__link">
+      <a href="../../development/documentation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1404,7 +1536,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Release Notes" class="md-nav__link">
+      <a href="../../../../Release Notes" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1425,7 +1557,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../projects/democracrm/glossary/" class="md-nav__link">
+      <a href="../../glossary/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1446,7 +1578,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../projects/democracrm/license/" class="md-nav__link">
+      <a href="../../license/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1479,30 +1611,25 @@
       
   
   
-    
   
   
-  
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1513,7 +1640,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Blog
@@ -1524,23 +1651,12 @@
                 
   
   
-    
-  
   
     
-      
-    
   
   
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../../blog/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1549,7 +1665,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -1562,7 +1677,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1592,16 +1707,148 @@
             
           
           
-  <div class="md-content" data-md-component="content">
-    <div class="md-content__inner">
-      <header class="md-typeset">
-        <h1 id="blog">Blog</h1>
-      </header>
-      
-      
-    </div>
-  </div>
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
 
+
+<h1 id="installation-step-2-postgresql-database-server">Installation Step 2: PostgreSQL Database Server</h1>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>DemocraCRM requires <strong>PostgreSQL 17 or later</strong>. MySQL or other databases are not supported.</p>
+</div>
+<h2 id="postgresql-server-installation-and-configuration">PostgreSQL Server Installation and Configuration</h2>
+<h3 id="install-the-postgresql-packages">Install the PostgreSQL Packages</h3>
+<p>Instead of using the default Debian installation of PostgreSQL, we will be using the packages
+from the <a href="https://www.postgresql.org/download/linux/Debian/">official PostgreSQL repository</a>.
+Copy the following commands and paste them into a terminal shell on the Debian server that will
+serve as the database server:</p>
+<pre><code>sudo apt install -y postgresql-common
+sudo /usr/share/postgresql-common/pgdg/apt.postgresql.org.sh
+</code></pre>
+<p>This will configure Debian to allow it to install and update packages from the official PostgreSQL
+repository. Next, perform the installation of the PostgreSQL server with PostGIS support:</p>
+<pre><code>sudo apt-get -y install postgresql-17 postgresql-17-postgis-3
+</code></pre>
+<h3 id="test-the-database-installation">Test the Database Installation</h3>
+<p>Before moving on, copy and paste the below command into a terminal shell to perform a quick verification
+that PostgreSQL has been installed successfully:</p>
+<pre><code>psql -V
+</code></pre>
+<p>You can also check the status of the PostgreSQL service via:</p>
+<pre><code>sudo systemctl status postgresql
+</code></pre>
+<h3 id="configure-the-database-server">Configure the Database Server</h3>
+<p>Now that PostgreSQL has been installed, we may need to perform a few configuration changes:</p>
+<ul>
+<li>Timezone changes on the database server</li>
+<li>Listening address(es) on the database server</li>
+<li>Allowed IP addresses from the application server</li>
+</ul>
+<p>The data for the DemocraCRM application will be stored in a PostgreSQL database, but we must first
+create and configure that database. Start by switching to the <code>postgres</code> user and enter the PostgreSQL
+CLI:</p>
+<pre><code>sudo -u postgres psql
+</code></pre>
+<h3 id="create-the-platform-runtime-user">Create the Platform Runtime User</h3>
+<p>Copy and paste the following command to create the <code>democracrm</code> user. Be sure to change the password
+within the quotes before submitting!</p>
+<pre><code>CREATE USER democracrm SUPERUSER PASSWORD 'thisisinsecure-pleasechange!' LOGIN;
+</code></pre>
+<p>This creates the database server user that will be used to run the platform database and connect the
+application server to the database server.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <code>democracrm</code> database user is only used by the server for management of the database. All
+platform user accounts will be created and managed within the DemocraCRM application.</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">Create your own secure password</p>
+<p><strong>Do not use the password from the above example!</strong> Choose a strong, random password to ensure
+secure database authentication for your DemocraCRM installation, and store a copy of it somewhere
+safe and secure for reference. Keep in mind that this user has superuser privileges in the database,
+and access must be protected.</p>
+</div>
+<h3 id="create-the-platform-database">Create the Platform Database</h3>
+<p>Next, copy and paste the following commands below to create the <code>democracrm</code> database, and assign both
+ownership and all administrative privileges to the <code>democracrm</code> user:</p>
+<pre><code>CREATE DATABASE democracrm WITH OWNER democracrm TEMPLATE template0 ENCODING UTF8;
+GRANT ALL PRIVILEGES ON DATABASE democracrm TO democracrm;
+</code></pre>
+<p>Now connect to the <code>democracrm</code> database by copying and pasting the following command:</p>
+<pre><code>\c democracrm
+</code></pre>
+<p>and enable the PostGIS database extension on the <code>democracrm</code> database by copying and pasting the
+following command:</p>
+<pre><code>CREATE EXTENSION postgis;
+</code></pre>
+<p>If everything went well, you can now disconnect from the database:</p>
+<pre><code>\q
+</code></pre>
+<h3 id="configure-the-platform-database-connectivity">Configure the Platform Database Connectivity</h3>
+<p>If you run the database server on the same machine as the application server, a localhost connection
+should work at this point.</p>
+<p>/etc/postgresql/17</p>
+<h3 id="verify-the-database-connection">Verify the Database Connection</h3>
+<p>You can verify that the installation and configuration was successful by running the following commands.</p>
+<p>First, execute the <code>psql</code> command to enter the PostgreSQL CLI with the username you created above. If
+using a remote database, or testing from the application server (which is a good idea to test), replace
+<code>localhost</code> with your database server's address after the <code>--host</code> flag.</p>
+<pre><code>psql --username democracrm --password --host localhost democracrm
+</code></pre>
+<p>You'll be prompted for a password next with a prompt like the one below. Type in the one you personally
+selected when creating the <code>democracrm</code> user above.</p>
+<pre><code>Password for user democracrm:
+</code></pre>
+<p>If successful, you'll be greeted by the PostgreSQL CLI and a <code>democracrm</code> prompt, as shown below. This
+means you are now in the DemocraCRM database.</p>
+<pre><code>psql (17 (Debian 16)
+SSL connection (protocol: TLSv1.3, cipher: TLS_AES_256_GCM_SHA384, compression: off)
+Type "help" for help.
+
+democracrm=&gt;
+</code></pre>
+<p>To verify the connection details, type the following command:</p>
+<pre><code>\conninfo
+</code></pre>
+<p>If successful, you'll see output similar to the following shown below. Remember that the address could
+be different depending on your database server.</p>
+<pre><code>You are connected to database "democracrm" as user "democracrm" on host "localhost" (address
+"127.0.0.1") at port "5432".
+SSL connection (protocol: TLSv1.3, cipher: TLS_AES_256_GCM_SHA384, compression: off)
+</code></pre>
+<p>Lastly, verify that PostGIS was successfully installed by running:</p>
+<pre><code>\dx
+</code></pre>
+<p>You should see <code>postgis</code> listed in the output, similar to the following:</p>
+<pre><code>                                List of installed extensions
+  Name   | Version |   Schema   |                        Description                         
+---------+---------+------------+------------------------------------------------------------
+ plpgsql | 1.0     | pg_catalog | PL/pgSQL procedural language
+ postgis | 3.3.2   | public     | PostGIS geometry and geography spatial types and functions
+(2 rows)
+</code></pre>
+<p>At this point, your database server is ready! Job well done. You can log out of the database by running:</p>
+<pre><code>\q
+</code></pre>
+<p>The next step is installing the DemocraCRM application server.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
           
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
@@ -1621,7 +1868,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../projects/democracrm/license/" class="md-footer__link md-footer__link--prev" aria-label="Previous: License">
+          <a href="../debian_linux/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Debian Linux">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1631,11 +1878,27 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                License
+                Debian Linux
               </div>
             </div>
           </a>
         
+        
+          
+          <a href="../democracrm_app/" class="md-footer__link md-footer__link--next" aria-label="Next: DemocraCRM Application">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                DemocraCRM Application
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
         
       </nav>
     
@@ -1755,10 +2018,10 @@ We use cookies to recognize your repeated visits and preferences, as well as to 
       </div>
       <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "navigation.tabs", "navigation.tabs.sticky", "navigation.footer", "navigation.sections", "navigation.top", "toc.follow", "toc.integrate", "search.suggest", "search.highlight", "search.share"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["content.code.copy", "navigation.tabs", "navigation.tabs.sticky", "navigation.footer", "navigation.sections", "navigation.top", "toc.follow", "toc.integrate", "search.suggest", "search.highlight", "search.share"], "search": "../../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
     
   </body>
