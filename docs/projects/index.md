@@ -7,7 +7,7 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ## :material-robot:{ .md .middle } DemocraCRM
+-   ## :material-robot-excited:{ .md .middle } DemocraCRM
 
     ---
 
@@ -23,6 +23,14 @@ hide:
      and utilize for reform efforts.
 
     [:octicons-arrow-right-24: Learn more](legiscrapers/index.md)
+
+-   ## :material-robot-dead:{ .md .middle } Lawgorithms
+
+    ---
+
+      A collection of ML/AI models to support data processing and analysis of legislative and election data.
+
+    [:octicons-arrow-right-24: Learn more](lawgorithms/index.md)
 
 </div>
 

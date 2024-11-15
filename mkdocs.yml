@@ -6,12 +6,15 @@ theme:
     accent: light green
   name: material
   icon:
-    repo: fontawesome/brands/github
+    logo: material/robot-happy
   features:
     - content.code.copy
     - navigation.tabs
     - navigation.tabs.sticky
+    - navigation.expand
     - navigation.footer
+    - navigation.indexes
+    - navigation.prune
     - navigation.sections
     - navigation.top
     - toc.follow
@@ -68,7 +71,7 @@ nav:
     - Projects:
       - projects/index.md
       - DemocraCRM:
-        - Introduction: projects/democracrm/index.md
+        - projects/democracrm/index.md
         - Installation:
           - Installation Overview: projects/democracrm/installation/installation_overview.md
           - Debian Linux: projects/democracrm/installation/debian_linux.md
@@ -107,6 +110,10 @@ nav:
         - Release Notes
         - Glossary: projects/democracrm/glossary.md
         - License: projects/democracrm/license.md
+      - Legiscrapers:
+        - projects/legiscrapers/index.md
+      - Lawgorithms:
+        - projects/lawgorithms/index.md
     - Blog:
       - blog/index.md
 
